@@ -448,9 +448,14 @@ img {
   | footer
   |============================
 */
+.container-futer {
+  /* display: flex; */
+}
+
 .footer {
   background-color: var(--background-futer-hero);
   padding: 100px 0;
+
 }
 
 .logo-futer {
@@ -478,6 +483,49 @@ img {
 
   color: #f4f4fd;
 }
+
+/**
+  |============================
+  | 
+  |============================
+*/
+.soc-net {
+  display: flex;
+  /* position: absolute; */
+  /* width: 208px; */
+  outline: 2px solid #e7e9fc;
+  /* margin-left: 500px; */
+
+}
+
+.text-social {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.list-net {
+  display: flex;
+  gap: 16px;
+}
+
+.list-futer {}
+
+.link-futer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+
+.icon-futer {}
+
 
 /**
   |============================
