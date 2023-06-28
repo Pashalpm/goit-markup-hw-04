@@ -448,9 +448,7 @@ img {
   | footer
   |============================
 */
-.container-futer {
-  /* display: flex; */
-}
+.container-futer {}
 
 .footer {
   background-color: var(--background-futer-hero);
@@ -491,14 +489,14 @@ img {
 */
 .soc-net {
   display: flex;
-  /* position: absolute; */
-  /* width: 208px; */
+  display: flex;
   outline: 2px solid #e7e9fc;
-  /* margin-left: 500px; */
-
 }
 
 .text-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -508,6 +506,8 @@ img {
 }
 
 .list-net {
+  justify-content: center;
+  align-items: center;
   display: flex;
   gap: 16px;
 }
