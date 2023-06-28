@@ -152,6 +152,12 @@ img {
   background-color: var(--background-futer-hero);
   padding: 188px 0;
   text-align: center;
+  margin: auto;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .cont-solutions {
 }
@@ -217,6 +223,24 @@ img {
 }
 .advantages-item {
 }
+/**
+  |============================
+  | 
+  |============================
+*/
+.icon-advantages {
+  display: block;
+  margin: auto;
+}
+.icon-icon {
+  margin-bottom: 8px;
+  padding: 24px 0;
+  background-color: #f4f4fd;
+} /**
+  |============================
+  | 
+  |============================
+*/
 .advantages-title {
   font-weight: 500;
   font-size: 20px;
@@ -291,6 +315,71 @@ img {
 }
 .team-text {
   text-align: center;
+  margin-bottom: 8px;
+}
+.list-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.card-icon {
+}
+.icon-card {
+}
+.link-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+/**
+  |============================
+  |        Customers
+  |============================
+*/
+.customers {
+  margin: auto;
+  width: 1440px;
+  padding: 120px 156px;
+}
+.title-customers {
+  margin: auto;
+  margin-bottom: 72px;
+  width: 183px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+.item-customers {
+}
+.list-customers {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.link-customers:hover {
+  border-color: #404bbf;
+}
+.link-customers:hover .icon {
+  fill: #404bbf;
+}
+.link-customers {
+  width: 168px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+}
+.icon {
+  fill: #8e8f99;
 }
 /**
   |============================
@@ -364,11 +453,39 @@ img {
   border: 1px solid transparent;
   cursor: pointer;
 }
+/**
+  |============================
+  |           OVERFLOW
+  |============================
+*/
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 360px;
+  height: 300px;
+  padding: 40px 32px 164px;
+  background-color: #4d5ae5;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: #f4f4fd;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.item-row {
+  position: relative;
+  overflow: hidden;
+}
 .img {
   cursor: pointer;
 }
-.item-row {
+
+.item-row:hover .overlay {
+  transform: translateY(0);
+}
+.item-row:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .list-row {
   column-gap: 24px;
@@ -388,8 +505,10 @@ img {
 }
 
 .title-text {
+  position: relative;
   padding: 32px 16px;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
+  background: #fff;
 }
