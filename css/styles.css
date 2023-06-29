@@ -108,18 +108,37 @@ img {
   margin-right: 332px;
 }
 
-.link-pad {
-  padding: 24px 0;
+.header-item {
+  position: relative;
+  display: block;
 }
 
-.header-item {}
-
 .header-link {
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+.nav-list-link::after {
+  content: "";
+  background: var(--hover-link-color);
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  transform: scale(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list-link:hover::after {
+  transform: scale(1);
+
+
 }
 
 .header-link:hover,
@@ -160,7 +179,7 @@ img {
 .adr-link:hover,
 .adr-link:focus {
   color: var(--hover-link-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /**
