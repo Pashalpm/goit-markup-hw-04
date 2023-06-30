@@ -242,12 +242,13 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
+
 }
 
 .btn:hover,
 .btn:focus {
   background-color: var(--hover-link-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /**
@@ -273,7 +274,11 @@ img {
   padding: 120px 0;
 }
 
-.container-advantages {}
+.container-advantages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .list-advantages {
   width: 1128px;
@@ -296,7 +301,8 @@ img {
 .icon-icon {
   margin-bottom: 8px;
   padding: 24px 0;
-  background-color: var(--background)
+  background-color: var(--background);
+  border-radius: 4px;
 }
 
 /**
@@ -370,7 +376,7 @@ img {
 }
 
 .name-post {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team-item {
@@ -416,9 +422,10 @@ img {
   border-radius: 50%;
 }
 
-.link-card:hover {
+.link-card:hover,
+.link-card:focus {
   background-color: var(--hover-link-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /**
@@ -458,17 +465,18 @@ img {
 .link-customers:hover,
 .link-customers:focus {
   border-color: var(--hover-link-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .link-customers:hover .icon,
 .link-customers:focus .icon {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--hover-link-color);
+  color: var(--hover-link-color);
 }
 
 .link-customers {
+  color: var(--color-icon);
   width: 168px;
   height: 88px;
   display: flex;
@@ -479,7 +487,7 @@ img {
 }
 
 .icon {
-  fill: var(--color-icon);
+  fill: currentColor;
 }
 
 /**
