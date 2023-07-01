@@ -450,7 +450,7 @@ img {
   line-height: 1.11;
   /* letter-spacing: 0.72px; */
   /* text-transform: capitalize; */
-  /* color: var(--titlt-black-color); */
+  color: var(--titlt-black-color);
 }
 
 .item-customers {}
@@ -484,7 +484,8 @@ img {
   justify-content: center;
   border-radius: 4px;
   border: 1px solid var(--color-icon);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
@@ -631,6 +632,7 @@ img {
 .img {
   display: block;
   cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-row {
@@ -643,6 +645,11 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img:hover {
+  transform: translateY(0%);
+  box-shadow: зі значенням 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /**
@@ -704,4 +711,6 @@ img {
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background: var(--background-color);
+  overflow: hidden;
+  border: 1px solid #f4f4fd;
 }
