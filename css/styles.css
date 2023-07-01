@@ -347,8 +347,6 @@ img {
   gap: 24px;
 }
 
-.waw-img {}
-
 /**
   |============================
   | Our Team
@@ -441,15 +439,11 @@ img {
 .container {}
 
 .title-customers {
-  /* margin: 0 auto; */
   margin-bottom: 72px;
   text-align: center;
-  /* width: 183px; */
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  /* letter-spacing: 0.72px; */
-  /* text-transform: capitalize; */
   color: var(--titlt-black-color);
 }
 
